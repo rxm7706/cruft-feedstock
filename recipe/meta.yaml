@@ -38,7 +38,7 @@ test:
     - cruft --help
 
 about:
-  home: https://github.com/timothycrosley/cruft
+  home: https://github.com/cruft/cruft
   license: MIT
   license_family: MIT
   license_file: LICENSE
@@ -47,8 +47,8 @@ about:
     Allows you to maintain all the necessary cruft for packaging and
     building projects separate from the code you intentionally write.
     Built on-top of CookieCutter.
-  doc_url: https://timothycrosley.github.io/cruft/
-  dev_url: https://github.com/timothycrosley/cruft
+  doc_url: https://cruft.github.io/cruft/
+  dev_url: https://github.com/cruft/cruft
 
 extra:
   recipe-maintainers:
