@@ -1,7 +1,7 @@
 About cruft
 ===========
 
-Home: https://github.com/timothycrosley/cruft
+Home: https://github.com/cruft/cruft
 
 Package license: MIT
 
