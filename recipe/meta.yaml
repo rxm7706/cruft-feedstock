@@ -1,5 +1,5 @@
 {% set name = "cruft" %}
-{% set version = "2.9.0" %}
+{% set version = "2.10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 550703c35b8125612ad89d93d176f29b3e362c19c74ed28895625afa9010fcb1
+  sha256: c5350ca3ef7b671409f9b24e8e0bd73d870433aa6b5abbf6e7b9b73f7b4adef0
 
 build:
   noarch: python
@@ -27,6 +27,7 @@ requirements:
     - gitpython >=3.0,<4.0
     - typer >=0.3.1,<0.4.0
     - click >=7.1.2,<8.0.0
+    - importlib_metadata >=3.4,<4.0
 
 test:
   requires:
