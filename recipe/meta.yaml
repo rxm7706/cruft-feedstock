@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-cache-dir -vvv
   entry_points:
     - cruft = cruft._cli:app
@@ -25,8 +25,8 @@ requirements:
     - python >=3.6
     - cookiecutter >=1.6,<2.0
     - gitpython >=3.0,<4.0
-    - typer >=0.3.1,<0.4.0
-    - click >=7.1.2,<8.0.0
+    - typer >=0.3.1,<0.5.0
+    - click >=7.1.2,<9.0.0
     - importlib_metadata >=3.4,<4.0
 
 test:
