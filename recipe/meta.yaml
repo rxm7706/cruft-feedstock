@@ -1,5 +1,5 @@
 {% set name = "cruft" %}
-{% set version = "2.10.1" %}
+{% set version = "2.10.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c5350ca3ef7b671409f9b24e8e0bd73d870433aa6b5abbf6e7b9b73f7b4adef0
+  sha256: fe7aaace048df17efc0e597c8035cb0deaa7a8734a86eb8c6cca5388971a2a42
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-cache-dir -vvv
   entry_points:
     - cruft = cruft._cli:app
@@ -20,14 +20,14 @@ requirements:
   host:
     - python
     - pip
-    - poetry >=0.12
+    - poetry-core >=1.0.8
   run:
-    - python >=3.6
+    - python >=3.6.2
     - cookiecutter >=1.6,<2.0
     - gitpython >=3.0,<4.0
-    - typer >=0.3.1,<0.5.0
+    - typer >=0.4.0,<0.5.0
     - click >=7.1.2,<9.0.0
-    - importlib_metadata >=3.4,<4.0
+    - importlib_metadata >=1.7.0
 
 test:
   requires:
