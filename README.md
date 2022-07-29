@@ -153,5 +153,6 @@ Feedstock Maintainers
 =====================
 
 * [@Zeitsperre](https://github.com/Zeitsperre/)
+* [@maresb](https://github.com/maresb/)
 * [@samj1912](https://github.com/samj1912/)
 
